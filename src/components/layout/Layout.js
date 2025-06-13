@@ -15,7 +15,6 @@ const Layout = ({
       <Header transparent={transparentHeader} />
       <main className="main-content">
         <div className="container">
-          {showBreadcrumbs && <Breadcrumbs customItems={customBreadcrumbs} />}
           {children}
         </div>
       </main>

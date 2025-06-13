@@ -8,25 +8,22 @@
   background-color: white;
 }
 
-/* Прозрачный хедер */
 .site-header.transparent {
   background-color: transparent;
   box-shadow: none;
 }
 
-/* Непрозрачный хедер при скролле */
 .site-header.solid {
   background-color: white;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Верхняя часть хедера с логотипом и кнопкой */
 .header-top {
   padding: 15px 0;
   border-bottom: 1px solid rgba(232, 232, 232, 0.5);
 }
 
-.container {
+.inner-container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 15px;
@@ -38,7 +35,6 @@
   align-items: center;
 }
 
-/* Добавляем контейнер для навигационной панели */
 .header-nav-container {
   display: flex;
   justify-content: space-between;
@@ -47,7 +43,6 @@
   border-left: 1px solid #e8e8e8;
 }
 
-/* Стили для логотипа */
 .logo-container {
   display: flex;
   align-items: center;
@@ -75,13 +70,11 @@
   color: #666;
 }
 
-/* Правая часть хедера */
 .header-actions {
   display: flex;
   align-items: center;
 }
 
-/* Нижняя часть хедера с навигацией */
 .header-nav {
   border-top: 1px solid #e8e8e8;
   border-bottom: 1px solid #e8e8e8;
@@ -89,7 +82,7 @@
 }
 
 .main-navigation {
-  flex: 1; /* Позволяет навигации занять доступное пространство */
+  flex: 1; 
 }
 
 .nav-menu {

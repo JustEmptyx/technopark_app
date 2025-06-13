@@ -22,7 +22,7 @@ const Header = () => {
   return (
     <header className={`site-header ${transparent ? 'transparent' : 'solid'}`}>
       <div className="header-top">
-        <div className="container header-top-container">
+        <div className="inner-container header-top-container">
           <div className="logo-container">
             <Link to="/">
               <img src="/assets/images/logo.svg" alt="Ассоциация технопарков" className="logo" />
@@ -38,7 +38,7 @@ const Header = () => {
       </div>
 
       <div className="header-nav">
-        <div className="container header-nav-container">
+        <div className="inner-container header-nav-container">
           <nav className="main-navigation">
             <ul className="nav-menu">
               <li className={location.pathname.includes('/goals') ? 'active' : ''}>

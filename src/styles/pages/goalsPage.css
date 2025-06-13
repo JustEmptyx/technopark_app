@@ -1,0 +1,183 @@
+body {
+  margin: 0;
+  font-family: 'IBM Plex Sans', sans-serif;
+}
+
+.container {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 0;
+  min-height: 50%;
+}
+
+.inner-container {
+  height: 100%;
+  justify-content: space-between;
+}
+
+.goals-page {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.hero-section {
+  position: sticky;
+  color: #fff;
+  padding: 5rem 2rem;
+  text-align: left;
+  overflow: hidden;
+  min-height: 80vh;
+}
+
+.hero-background-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('../../images/GoalsPage/hero-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  transform: rotate(45deg);
+  transform-origin: top left;
+  z-index: 0;
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+}
+
+.hero-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); 
+}
+
+.hero-content {
+  position: relative;
+  align-items: flex-start;
+  z-index: 1;
+}
+
+.hero-section h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.slogan {
+  z-index: 1;
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.buttons-container {
+  position: absolute;
+  bottom: 2rem;
+  display: flex;
+  gap: 1rem;
+  z-index: 2;
+}
+
+.button {
+  padding: 1rem 2rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.primary-button {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.primary-button:hover {
+  background-color: #0056b3;
+}
+
+.secondary-button {
+  background-color: transparent;
+  border: 1px solid #ccc; 
+  color: #ccc;
+}
+
+.secondary-button:hover {
+  background-color: #ccc;
+  color: #000;
+}
+
+.content-section {
+  display: flex;
+  gap: 2rem;
+  margin-top: 4rem;
+}
+
+.left-column {
+  flex: 1;
+}
+
+.right-column {
+  flex: 1;
+}
+
+.feature {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.icon-text {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.icon {
+  width: 50px;
+  height: 50px;
+}
+
+.feature h3 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.feature h4 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.feature p {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.breadcrumbs {
+  margin-bottom: 1rem;
+  font-size: 16px;
+  color: #0004ff;
+  position: relative;
+  z-index: 2;
+  letter-spacing: -1;
+}
+
+.breadcrumbs-link {
+  color: #72A4FF;
+  text-decoration: none;
+}
+
+.breadcrumbs-link:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.breadcrumbs-separator {
+  margin: 0 5px;
+  color: #aaa;
+}
+
+.breadcrumbs-current {
+  color: #fff;
+}

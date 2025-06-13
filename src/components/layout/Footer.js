@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Link } from 'react-router-dom';
 import '../../styles/components/layout/footer.css';
@@ -8,7 +9,7 @@ const Footer = () => {
   return (
     <footer className="site-footer">
       <div className="footer-main">
-        <div className="container">
+        <div className="inner-container">
           <div className="footer-grid">
             <div className="footer-logo-section">
               <Link to="/" className="footer-logo-link">
@@ -22,19 +23,15 @@ const Footer = () => {
             
             <div className="footer-links-section">
               <h3 className="footer-heading">Сайты учредителей</h3>
-              <div className="footer-links-grid">
-                <ul className="footer-links">
+              <div className="footer-links-row">
+                <ul className="footer-links footer-links-grid">
                   <li><a href="https://example.com" target="_blank" rel="noopener noreferrer">Минский городской технопарк</a></li>
-                  <li><a href="https://example.com" target="_blank" rel="noopener noreferrer">Технопарк «Коралл»</a></li>
-                </ul>
-                <ul className="footer-links">
                   <li><a href="https://example.com" target="_blank" rel="noopener noreferrer">Правовая группа «Закон и порядок»</a></li>
+                  <li><a href="https://example.com" target="_blank" rel="noopener noreferrer">Технологический парк Могилев</a></li>
+                  <li><a href="https://example.com" target="_blank" rel="noopener noreferrer">Технопарк «Коралл»</a></li>
                   <li><a href="https://example.com" target="_blank" rel="noopener noreferrer">ООО «Регнум»</a></li>
                 </ul>
               </div>
-              <ul className="footer-links">
-                <li><a href="https://example.com" target="_blank" rel="noopener noreferrer">Технологический парк Могилев</a></li>
-              </ul>
             </div>
 
             <div className="footer-contact-section">
@@ -49,7 +46,7 @@ const Footer = () => {
       </div>
       
       <div className="footer-bottom">
-        <div className="container">
+        <div className="inner-container">
           <div className="footer-bottom-content">
             <div className="footer-info">
               <div className="footer-social">
@@ -79,10 +76,10 @@ const Footer = () => {
       </div>
       
       <div className="footer-copyright">
-        <div className="container">
+        <div className="inner-container">
           <div className="copyright-content">
             <div className="copyright-text">
-              © Copyright {currentYear} Technoparks Association. All Rights Reserved.
+              &copy; Copyright {currentYear} Technoparks Association. All Rights Reserved.
             </div>
             <div className="footer-policies">
               <Link to="/terms" className="policy-link">Terms of service</Link>
