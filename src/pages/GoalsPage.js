@@ -100,6 +100,7 @@ const GoalsPage = ({
                   <h3>Инвестиционная привлекательность</h3>
                   <p>Повышаем инвестиционную привлекательность через развитие инновационной инфраструктуры и предпринимательства.</p>
                 </div>
+                
                 <div className="right-side">
                   <img src={investmentImage} alt="Инвестиционная привлекательность" />
                 </div>
@@ -145,11 +146,11 @@ const GoalsPage = ({
             </div>
 
             {/* Блоки 6 и 7: Только текст */}
-            <div className="content-item half-width">
+            <div className="content-item left-text">
               <h3>Продвижение интересов</h3>
               <p>Продвижение интересов членов ассоциации на региональном и международном уровнях.</p>
             </div>
-            <div className="content-item half-width">
+            <div className="content-item right-text">
               <h3>Деловые контакты</h3>
               <p>Формирование деловых контактов с венчурными инвестициями и партнерами.</p>
             </div>

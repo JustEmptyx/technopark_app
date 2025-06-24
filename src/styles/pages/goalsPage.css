@@ -245,7 +245,7 @@ body {
   display: grid;
   grid-template-columns: repeat(2, 1fr); /* Две колонки */
   gap: 2rem; /* Отступы между элементами */
-  grid-template-rows: 1fr 2fr;
+  grid-auto-rows: minmax(200px, auto); /* Минимальная высота строки */
 }
 
 .content-item {
@@ -267,7 +267,8 @@ body {
 }
 
 .large-left {
-  grid-row: span 2; /* Занимает 2 строки */
+  grid-row: auto / span 2; /* Занимает 2 строки */
+  padding: 0;
 }
 
 .small-left {
@@ -280,9 +281,17 @@ body {
   align-items: center;
 }
 
+.left-text{
+  grid-column: 1; /* В правой колонке */
+  padding: 2rem;
+  align-items: center;
+
+}
+
 .large-right {
   grid-column: 2; /* В правой колонке */
-  grid-row: span 2; /* Занимает 2 строки */
+  grid-row: auto / span 2; /* Занимает 2 строки */
+  padding: 0;
 }
 
 .half-width {
@@ -309,11 +318,12 @@ body {
 .two-line-content {
   display: grid;
   grid-template-rows: 1fr 1fr; /* Разбиваем на 2 строки */
-  gap: 2rem; /* Отступ между строками */
 }
 
 .text-section {
-  padding: 2rem; /* Отступы для текста */
+  height: 100%; /* Занимает 50% ширины */
+  padding: 3rem;
+  align-items: center;
 }
 
 .image-section {
@@ -326,7 +336,7 @@ body {
 
 .left-side {
   width: 50%; /* Занимает 50% ширины */
-  padding: 2rem;
+  padding: 3rem;
 }
 
 .right-side {
