@@ -10,9 +10,12 @@ body {
   min-height: 50%;
 }
 
-.inner-container {
-  height: 100%;
-  justify-content: space-between;
+.goals-inner-container {
+  display: flex;
+  flex-direction: column; /* Вертикальное расположение элементов */
+  align-items: flex-start; /* Выравнивание по левому краю */
+  justify-content: center; /* Центрирование по вертикали */
+  height: 100%; /* Занимает всю высоту родительского элемента */
 }
 
 .goals-page {
@@ -22,7 +25,7 @@ body {
 }
 
 .hero-section {
-  position: sticky;
+  position: relative;
   color: #fff;
   padding: 5rem 2rem;
   text-align: left;
@@ -36,7 +39,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url('../../images/GoalsPage/hero-bg.jpg');
+  background-image: url('../../images/goalsPage/hero-bg.jpg');
   background-size: cover;
   background-position: center;
   transform: rotate(45deg);
@@ -59,6 +62,7 @@ body {
   position: relative;
   align-items: flex-start;
   z-index: 1;
+  flex-direction: column;
 }
 
 .hero-section h1 {
@@ -69,8 +73,8 @@ body {
 .slogan {
   z-index: 1;
   font-size: 1.2rem;
-  margin-bottom: 2rem;
-  text-align: center;
+  margin: 0;
+  text-align: start;
 }
 
 .buttons-container {
@@ -79,6 +83,12 @@ body {
   display: flex;
   gap: 1rem;
   z-index: 2;
+  flex-direction: column;
+}
+
+.button-group {
+  display: flex;
+  gap: 1rem;
 }
 
 .button {
@@ -109,17 +119,48 @@ body {
 }
 
 .content-section {
-  display: flex;
   gap: 2rem;
   margin-top: 4rem;
 }
 
+/* Первый блок */
+.first-block {
+  margin-top: 4rem;
+}
+
+.two-column-container {
+  display: flex;
+  justify-content: space-between; /* Выравнивание по краям */
+  align-items: flex-start; /* Вертикальное выравнивание сверху */
+  margin-bottom: 5%;
+}
+
 .left-column {
-  flex: 1;
+  max-width: 50%; /* Ограничиваем ширину левой колонки */
+  width: 50%;
 }
 
 .right-column {
-  flex: 1;
+  max-width: 50%; /* Ограничиваем ширину правой колонки */
+  width: 50%; /* Указываем явно 50% */
+  margin-left: 3rem;
+}
+
+/* Второй блок */
+.second-block {
+  margin-top: 4rem;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Разбиваем на 3 равные колонки */
+  gap: 2rem; /* Отступы между элементами */
+}
+
+.feature-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .feature {
@@ -137,10 +178,11 @@ body {
 .icon {
   width: 50px;
   height: 50px;
+  margin-bottom: 1rem;
 }
 
 .feature h3 {
-  font-size: 1.8rem;
+  font-size: 2.8rem;
   margin-bottom: 1rem;
 }
 
@@ -180,4 +222,129 @@ body {
 
 .breadcrumbs-current {
   color: #fff;
+}
+
+.gradient-text {
+  font-size: 60px;
+  line-height: 60px;
+  background-image: linear-gradient(to right, #6a50ec, #ff49db); /* Градиент от фиолетового до розового */
+  -webkit-background-clip: text; /* Для Chrome, Safari и Edge */
+  -webkit-text-fill-color: transparent; /* Для Chrome, Safari и Edge */
+  background-clip: text; /* Для Firefox */
+  color: transparent; /* Для браузеров, не поддерживающих background-clip */
+}
+
+/* Третий блок */
+.third-block {
+  background-color: #000; /* Чёрный фон */
+  color: #fff; /* Белый текст */
+  padding: 4rem 0; /* Отступ сверху и снизу */
+}
+
+.content-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Две колонки */
+  gap: 2rem; /* Отступы между элементами */
+  grid-template-rows: 1fr 2fr;
+}
+
+.content-item {
+  background-color: #16171D; /* Чёрный фон для каждого блока */
+  padding: 1rem; /* Отступ внутри блока */
+  margin-bottom: 2rem; /* Вертикальные отступы между блоками */
+}
+
+/* Стили для изображений */
+.content-item img {
+  width: 100%; /* Занимает всю ширину контейнера */
+  height: auto; /* Сохраняет пропорции изображения */
+  display: block; /* Убирает лишний отступ под изображением */
+}
+
+.full-width {
+  grid-column: span 2; /* Занимает 2 колонки (весь экран) */
+  padding: 0;
+}
+
+.large-left {
+  grid-row: span 2; /* Занимает 2 строки */
+}
+
+.small-left {
+  grid-row: span 1; /* Занимает 1 строку */
+}
+
+.right-text {
+  grid-column: 2; /* В правой колонке */
+  padding: 2rem;
+  align-items: center;
+}
+
+.large-right {
+  grid-column: 2; /* В правой колонке */
+  grid-row: span 2; /* Занимает 2 строки */
+}
+
+.half-width {
+  grid-column: span 1; /* Занимает 1 колонку */
+}
+
+/* Градиентные линии */
+.content-item h3::before {
+  content: '';
+  display: block;
+  width: 200px; /* Ширина линии */
+  height: 3px; /* Высота линии */
+  background-image: linear-gradient(to right, #007bff, #afafaf); /* Градиентный фон */
+  margin-bottom: 1rem; /* Отступ под линией */
+}
+
+/* Двухколонный контент */
+.two-column-content {
+  display: flex;
+  justify-content: space-between; /* Выравнивание по краям */
+  align-items: center; /* Вертикальное выравнивание */
+}
+
+.two-line-content {
+  display: grid;
+  grid-template-rows: 1fr 1fr; /* Разбиваем на 2 строки */
+  gap: 2rem; /* Отступ между строками */
+}
+
+.text-section {
+  padding: 2rem; /* Отступы для текста */
+}
+
+.image-section {
+  padding: 0; /* Нет отступов для изображения */
+}
+
+.image-section img {
+  width: 100%; /* Изображение растягивается на всю ширину */
+}
+
+.left-side {
+  width: 50%; /* Занимает 50% ширины */
+  padding: 2rem;
+}
+
+.right-side {
+  width: 50%; /* Занимает 50% ширины */
+  padding: 0;
+}
+
+.right-side img {
+  width: 100%;
+  height: auto;
+}
+
+/* Градиентные линии */
+.left-side h3::before {
+  content: '';
+  display: block;
+  width: 100px; /* Ширина линии */
+  height: 4px; /* Высота линии */
+  background-image: linear-gradient(to right, #007bff, #6a50ec); /* Градиентный фон */
+  margin-bottom: 1rem; /* Отступ под линией */
 }

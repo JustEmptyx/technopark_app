@@ -23,15 +23,13 @@
   border-bottom: 1px solid rgba(232, 232, 232, 0.5);
 }
 
-.inner-container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 15px;
+.header-inner-container{
+
 }
 
 .header-top-container {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-between; 
   align-items: center;
 }
 
@@ -73,6 +71,12 @@
 .header-actions {
   display: flex;
   align-items: center;
+}
+
+.header-actions-right {
+  display: flex;
+  align-items: center;
+  gap: 1rem; /* Отступ между кнопкой и соцсетями */
 }
 
 .header-nav {

@@ -29,7 +29,8 @@ const Header = () => {
             </Link>
           </div>
 
-          <div className="header-actions">
+          {/* Кнопка "Связаться с нами" справа */}
+          <div className="header-actions-right">
             <Link to="/contacts" className="contact-button">
               Связаться с нами <span className="arrow">→</span>
             </Link>
@@ -61,15 +62,16 @@ const Header = () => {
               </li>
             </ul>
           </nav>
-          
+
+          {/* Социальные сети в правой части нижней секции */}
           <div className="social-links">
-            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="social-link">
+            <a href="https://instagram.com"  target="_blank" rel="noopener noreferrer" className="social-link">
               <i className="fab fa-instagram"></i>
             </a>
-            <a href="https://telegram.org" target="_blank" rel="noopener noreferrer" className="social-link">
+            <a href="https://telegram.org"  target="_blank" rel="noopener noreferrer" className="social-link">
               <i className="fab fa-telegram-plane"></i>
             </a>
-            <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" className="social-link">
+            <a href="https://youtube.com"  target="_blank" rel="noopener noreferrer" className="social-link">
               <i className="fab fa-youtube"></i>
             </a>
           </div>
