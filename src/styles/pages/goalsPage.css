@@ -246,6 +246,7 @@ body {
   grid-template-columns: repeat(2, 1fr); /* Две колонки */
   gap: 2rem; /* Отступы между элементами */
   grid-auto-rows: minmax(200px, auto); /* Минимальная высота строки */
+  grid-template-rows: repeat(6, 1fr);
 }
 
 .content-item {
@@ -357,4 +358,18 @@ body {
   height: 4px; /* Высота линии */
   background-image: linear-gradient(to right, #007bff, #6a50ec); /* Градиентный фон */
   margin-bottom: 1rem; /* Отступ под линией */
+}
+
+.text-section-header-block3{
+  font-size: 32px;
+}
+
+.text-section-content-block3{
+  font-size: 18px;
+}
+
+.gradient-icon {
+  width: 50px;
+  height: 50px;
+  display: block;
 }

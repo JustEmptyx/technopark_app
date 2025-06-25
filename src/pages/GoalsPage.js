@@ -5,6 +5,7 @@ import "../styles/pages/goalsPage.css"
 import investmentImage from '../images/goalsPage/investment-attraction.jpg';
 import subcontractingImage from '../images/goalsPage/subcontracting.png';
 import exportOrientedProductionImage from "../images/goalsPage/export-oriented-production.jpg"
+import GradientIcon from '../components/common/GradientIcon';
 const GoalsPage = ({ 
   children, 
   showBreadcrumbs = true, 
@@ -55,10 +56,10 @@ const GoalsPage = ({
                 <h3>Наши технологии. Наш успех.</h3>
               </div>
               <div className="feature-item">
-                <img src="/icons/icon-infra.svg" alt="Инновационная инфраструктура" className="icon" />
+                <GradientIcon id="infra" width={50} height={50} />
                 <div>
                   <h4>Инновационная инфраструктура</h4>
-                  <p>Создаем мощную инновационную инфраструктуру, объединяя ресурсы и возможности технопарков и компаний для развития новых технологий и стартапов.</p>
+                  <p>Создаем мощную инновационную инфраструктуру...</p>
                 </div>
               </div>
               <div className="feature-item">
@@ -84,10 +85,14 @@ const GoalsPage = ({
         <div className="inner-container">
           <div className="two-column-container">
             <div className="left-column">
-              <h2>Основные задачи Ассоциации</h2>
+              <div className="text-section-header-block3">
+                <h2>Основные задачи Ассоциации</h2>
+              </div>
             </div>
             <div className="right-column">
-              <p>Объединяем усилия для совместного успеха, продвигаем инновации и развиваем технологии.</p>
+              <div className="text-section-content-block3">
+                <p>Объединяем усилия для совместного успеха, продвигаем инновации и развиваем технологии.</p>
+              </div>
             </div>
           </div>
 
@@ -97,10 +102,13 @@ const GoalsPage = ({
             <div className="content-item full-width">
               <div className="two-column-content">
                 <div className="left-side">
-                  <h3>Инвестиционная привлекательность</h3>
-                  <p>Повышаем инвестиционную привлекательность через развитие инновационной инфраструктуры и предпринимательства.</p>
+                  <div className="text-section-header-block3">
+                    <h3>Инвестиционная привлекательность</h3>
+                  </div>
+                  <div className="text-section-content-block3">
+                    <p>Повышаем инвестиционную привлекательность через развитие инновационной инфраструктуры и предпринимательства.</p>
+                  </div>
                 </div>
-                
                 <div className="right-side">
                   <img src={investmentImage} alt="Инвестиционная привлекательность" />
                 </div>
@@ -111,8 +119,12 @@ const GoalsPage = ({
             <div className="content-item large-left">
               <div className="two-line-content">
                 <div className="text-section">
-                  <h3>Субконтрактация</h3>
-                  <p>Стимулируем субконтрактацию для формирования цепочек добавленной ценности в инновационной инфраструктуре.</p>
+                  <div className="text-section-header-block3">
+                    <h3>Субконтрактация</h3>
+                  </div>
+                  <div className="text-section-content-block3">
+                    <p>Стимулируем субконтрактацию для формирования цепочек добавленной ценности в инновационной инфраструктуре.</p>
+                  </div>
                 </div>
                 <div className="image-section">
                   <img src={subcontractingImage} alt="Субконтрактация" />
@@ -122,16 +134,24 @@ const GoalsPage = ({
             
             {/* Блок 4: Справа от блоков 2 и 3, только текст */}
             <div className="content-item right-text">
-              <h3>Синергия производства</h3>
-              <p>Обеспечиваем синергию через двустороннюю кооперацию, совместные проекты и обмен опытом.</p>
+              <div className="text-section-header-block3">
+                <h3>Синергия производства</h3>
+              </div>
+              <div className="text-section-content-block3">
+                <p>Обеспечиваем синергию через двустороннюю кооперацию, совместные проекты и обмен опытом.</p>
+              </div>
             </div>
 
             {/* Блок 5: Справа от блока 4, текст + изображение */}
             <div className="content-item large-right">
               <div className="two-line-content">
                 <div className="text-section">
-              <h3>Экспортно-ориентированные производства</h3>
-              <p>Оптимизируем развитие высокотехнологичных производств, ориентированных на экспорт.</p>
+                  <div className="text-section-header-block3">
+                    <h3>Экспортно-ориентированные производства</h3>
+                  </div>
+                  <div className="text-section-content-block3">
+                    <p>Оптимизируем развитие высокотехнологичных производств, ориентированных на экспорт.</p>
+                  </div>
                 </div>
                 <div className="image-section">
                   <img src={exportOrientedProductionImage} alt="Экспортно-ориентированные производства" />
@@ -141,18 +161,30 @@ const GoalsPage = ({
 
             {/* Блок 3: Под блоком 2, только текст */}
             <div className="content-item left-text">
-              <h3>Экспертно-аналитическая поддержка</h3>
-              <p>Обеспечиваем экспертно-аналитическую поддержку для принятия решений на основе лучшей практики проектов.</p>
+              <div className="text-section-header-block3">
+                <h3>Экспертно-аналитическая поддержка</h3>
+              </div>
+              <div className="text-section-content-block3">
+                <p>Обеспечиваем экспертно-аналитическую поддержку для принятия решений на основе лучшей практики проектов.</p>
+              </div>
             </div>
 
             {/* Блоки 6 и 7: Только текст */}
             <div className="content-item left-text">
-              <h3>Продвижение интересов</h3>
-              <p>Продвижение интересов членов ассоциации на региональном и международном уровнях.</p>
+              <div className="text-section-header-block3">
+                <h3>Продвижение интересов</h3>
+              </div>
+              <div className="text-section-content-block3">
+                <p>Продвижение интересов членов ассоциации на региональном и международном уровнях.</p>
+              </div>
             </div>
             <div className="content-item right-text">
-              <h3>Деловые контакты</h3>
-              <p>Формирование деловых контактов с венчурными инвестициями и партнерами.</p>
+              <div className="text-section-header-block3">
+                <h3>Деловые контакты</h3>
+              </div>
+              <div className="text-section-content-block3">
+                <p>Формирование деловых контактов с венчурными инвестициями и партнерами.</p>
+              </div>
             </div>
           </div>
         </div>
