@@ -1,24 +1,27 @@
 .breadcrumbs {
-  margin: 20px 0;
-  font-size: 14px;
-  color: #333;
+  margin-bottom: 1rem;
+  font-size: 16px;
+  color: #0004ff;
+  position: relative;
+  z-index: 2;
+  letter-spacing: -1;
 }
 
-.breadcrumbs a {
-  color: #4762FF;
+.breadcrumbs-link {
+  color: #72A4FF;
   text-decoration: none;
-  transition: color 0.3s ease;
 }
 
-.breadcrumbs a:hover {
+.breadcrumbs-link:hover {
+  color: #fff;
   text-decoration: underline;
 }
 
 .breadcrumbs-separator {
-  margin: 0 8px;
-  color: #666;
+  margin: 0 5px;
+  color: #aaa;
 }
 
 .breadcrumbs-current {
-  color: #666;
+  color: #fff;
 }

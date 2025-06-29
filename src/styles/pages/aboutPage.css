@@ -1,0 +1,567 @@
+body {
+  margin: 0;
+  font-family: 'IBM Plex Sans', sans-serif;
+}
+
+.container {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 0;
+  min-height: 50%;
+}
+
+.aboutPage-inner-container {
+  display: flex;
+  flex-direction: column; /* Вертикальное расположение элементов */
+  align-items: flex-start; /* Выравнивание по левому краю */
+  height: 100%; /* Занимает всю высоту родительского элемента */
+  width: 100%;
+}
+
+.aboutPage-hero-section {
+  position: relative;
+  color: #fff;
+  padding: 5rem 2rem;
+  text-align: left;
+  overflow: hidden;
+  min-height: 80vh;
+  margin-top:50px;
+}
+
+.aboutPage-hero-background-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('../../images/goalsPage/hero-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  transform: rotate(45deg);
+  transform-origin: top left;
+  z-index: 0;
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+}
+
+.aboutPage-hero-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); 
+}
+
+.aboutPage-hero-content {
+  position: relative;
+  align-items: flex-start;
+  z-index: 1;
+  flex-direction: column;
+  width:510px;
+}
+
+.aboutPage-hero-content h1{
+  font-size: 68px;
+  line-height: 108%;
+  font-weight: 400;
+}
+
+.hero-section-aboutPage h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.aboutPage-slogan {
+  z-index: 1;
+  font-size: 26px;
+  margin: 0;
+  text-align: start;
+  font-weight: 400;
+  line-height: 110%;
+}
+
+.aboutPage-buttons-container {
+  position: absolute;
+  bottom: 2rem;
+  display: flex;
+  gap: 40px;
+  z-index: 2;
+  flex-direction: column;
+  width: 770px;
+}
+
+.aboutPage-button-group {
+  display: flex;
+  gap: 1rem;
+}
+
+.aboutPage-button {
+  height:51px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 110%;
+}
+
+.aboutPage-primary-button {
+  width: 373.5px;
+  background-color: #2264DC;
+  color: #fff;
+}
+
+.aboutPage-primary-button:hover {
+  background-color: #002042;
+}
+
+.aboutPage-secondary-button {
+  width: 377px;
+  background-color: transparent;
+  border: 1px solid #ccc; 
+  color: #ccc;
+}
+
+.aboutPage-secondary-button:hover {
+  background-color: #ccc;
+  color: #000;
+}
+
+.aboutPage-content-section {
+  gap: 2rem;
+  margin-top: 4rem;
+}
+
+/* Первый блок */
+.aboutPage-first-block {
+  display: flex; /* Используем Flexbox для выравнивания */
+  justify-content: space-between; /* Распределяем пространство между элементами */
+  align-items: flex-start; /* Центрируем элементы по вертикали */
+  background-color: #E8E9EE; /* Серый фон */
+  height: 116px; /* Высота всего блока */
+  padding: 0 16px 0 17px; /* Отступы слева и справа */
+}
+
+.aboutPage-first-block-left-section{
+  flex: 1; /* Занимает оставшееся пространство */
+  padding-top: 32px; /* Отступ сверху до заголовка */
+}
+
+.aboutPage-first-block-left-section h2{
+    font-weight: 600; /* Жирность шрифта заголовка */
+    font-size: 18px; /* Размер шрифта заголовка */
+    line-height: 130%; /* Высота строки заголовка */
+    margin: 0; /* Убираем отступы по умолчанию */
+}
+
+.aboutPage-first-block-left-section p{
+  font-weight: 400; /* Жирность шрифта текста */
+  font-size: 18px; /* Размер шрифта текста */
+  line-height: 140%; /* Высота строки текста */
+  margin: 3px 0 0 0; /* Отступ сверху 3px, снизу 0 */
+}
+
+.aboutPage-first-block-right-section{
+  display: flex; /* Используем Flexbox для выравнивания кнопки */
+  align-items: flex-start; /* Центрируем кнопку по вертикали */
+  padding-top: 32px;
+}
+
+.right-section-apply-button{
+    width: 320px; /* Ширина кнопки */
+    height: 51px; /* Высота кнопки */
+    background-color: #EDEDF1; /* Цвет фона кнопки */
+    color: #2264DC; /* Цвет текста кнопки */
+    border: 1.3px solid #2264DC; /* Граница кнопки */
+    font-weight: 400; /* Жирность шрифта кнопки */
+    font-size: 17px; /* Размер шрифта кнопки */
+    line-height: 110%; /* Высота строки кнопки */
+    cursor: pointer; /* Курсор при наведении */
+    padding-left: 17px; /* Отступ слева для текста внутри кнопки */
+    padding-top: 16px; /* Убираем верхний отступ */
+    display: flex; /* Используем Flexbox для выравнивания текста внутри кнопки */
+}
+
+.right-section-apply-button:hover{
+  background-color: #2264DC; /* Цвет фона при наведении */
+  color: #EDEDF1;
+  font-weight: 400; /* Жирность шрифта кнопки */
+  font-size: 17px; /* Размер шрифта кнопки */
+  line-height: 110%; /* Высота строки кнопки */
+}
+
+.two-column-container {
+  display: flex;
+  justify-content: space-between; /* Выравнивание по краям */
+  align-items: flex-start; /* Вертикальное выравнивание сверху */
+  margin-bottom: 5%;
+}
+
+/* Второй блок */
+.aboutPage-second-block {
+  margin-top: 69px;
+  height:1354px;
+}
+
+.aboutPage-second-block h2{
+  font-weight: 400;
+  font-size: 58px;
+  line-height: 110%;
+  color: #0A0046;
+  margin-bottom: 36px;
+}
+
+.aboutPage-second-block-grid{
+  display:flex;
+}
+
+.aboutPage-second-block-left-block{
+  width:50%;
+}
+
+.aboutPage-second-block-left-block p{
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 140%;
+  margin-bottom: 32px;
+}
+
+.aboutPage-second-block-right-block{
+  width:50%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+.aboutPage-second-block-right-block img{
+  width:100%;
+  max-width: 100%;
+  height: auto;
+}
+
+.aboutPage-second-block-our-members-left-block{
+  width: 374px;
+}
+
+.aboutPage-second-block-our-members-right-block{
+  margin-left: 22px;
+  flex-grow: 1; /* Позволяет правому блоку занимать оставшееся пространство */
+}
+
+.aboutPage-our-members-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 336px); /* Разбиваем на 3 равные колонки */
+  gap:60px;
+}
+
+.aboutPage-our-members-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  letter-spacing: -1px;
+}
+
+.aboutPage-our-members {
+  margin-top:69px;
+  display: flex;
+}
+
+.icon-text {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.icon {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 1rem;
+}
+
+.aboutPage-our-members h3 {
+  font-size: 58px;
+  margin-top: 3px;
+  font-weight: 300;
+  line-height: 115%;
+}
+
+.aboutPage-our-members p {
+  font-size: 18px;
+  line-height: 1.5;
+  font-weight: 40;
+  margin-bottom: 0px;
+}
+
+.aboutPage-main-directions {
+  margin-top: 155px;
+  border-top: 1.3px solid #C0C6CF;
+  width: 100%;
+  height:373px;
+}
+
+.aboutPage-main-directions-grid {
+  margin-top: 32px;
+  display:flex;
+}
+
+.aboutPage-main-directions-grid h1{
+  width:128px;
+  font-weight: 400;
+  font-size: 58px;
+  line-height: 110%;
+}
+
+.aboutPage-main-directions-grid h2{
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 130%;
+  margin-bottom: 16px;
+}
+
+.aboutPage-main-directions-grid p{
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 140%;
+  margin-bottom: 17px;
+}
+
+.aboutPage-main-directions-grid a{
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 130%;
+  color: #0E61FE;
+}
+
+.aboutPage-main-directions-left-block{
+  width:50%;
+}
+
+.aboutPage-main-directions-right-block{
+  margin-top: 9px;
+  margin-left:14px;
+  flex-direction: column;
+  width:50%;
+}
+
+.aboutPage-main-directions-right-block-grid-item:not(:last-child){
+  margin-bottom: 41px;
+}
+
+.aboutPage-image-block{
+  width: 100%; /* Занимает всю ширину */
+  height:835px;
+  overflow: hidden; /* Скрывает переполнение, если изображение больше блока */
+  object-fit: cover;
+}
+
+.aboutPage-image{
+  width: 100%; /* Растягивает изображение на всю ширину блока */
+  height: auto; /* Сохраняет пропорции изображения */
+  display: block; /* Убирает отступы снизу у изображения */
+}
+
+.gradient-text-b1 {
+  font-size: 62px;
+  line-height: 110%;
+  background-image: linear-gradient(to right, #1461FE, #8940FB); /* Градиент от фиолетового до розового */
+  -webkit-background-clip: text; /* Для Chrome, Safari и Edge */
+  -webkit-text-fill-color: transparent; /* Для Chrome, Safari и Edge */
+  background-clip: text; /* Для Firefox */
+  color: transparent; /* Для браузеров, не поддерживающих background-clip */
+  font-weight: 400;
+  
+}
+
+.gradient-text-b2 h2{
+  font-size: 62px;
+  line-height: 110%;
+  background-image: linear-gradient(to right, #2453C0, #BFD3FF); /* Градиент от фиолетового до розового */
+  -webkit-background-clip: text; /* Для Chrome, Safari и Edge */
+  -webkit-text-fill-color: transparent; /* Для Chrome, Safari и Edge */
+  background-clip: text; /* Для Firefox */
+  color: transparent; /* Для браузеров, не поддерживающих background-clip */
+  font-weight: 400;
+}
+
+/* Третий блок */
+.third-block {
+  background-color: #000; /* Чёрный фон */
+  color: #fff; /* Белый текст */
+  padding: 4rem 0; /* Отступ сверху и снизу */
+}
+
+.content-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Две колонки */
+  gap: 2rem; /* Отступы между элементами */
+  grid-auto-rows: minmax(200px, auto); /* Минимальная высота строки */
+  grid-template-rows: repeat(5, 1fr);
+}
+
+.content-item {
+  background-color: #16171D; /* Чёрный фон для каждого блока */
+  padding: 1rem; /* Отступ внутри блока */
+  margin-bottom: 2rem; /* Вертикальные отступы между блоками */
+}
+
+/* Стили для изображений */
+.content-item img {
+  width: 100%; /* Занимает всю ширину контейнера */
+  height: auto; /* Сохраняет пропорции изображения */
+  display: block; /* Убирает лишний отступ под изображением */
+}
+
+.full-width {
+  grid-column: span 2; /* Занимает 2 колонки (весь экран) */
+  padding: 0;
+}
+
+.large-left {
+  grid-row: auto / span 2; /* Занимает 2 строки */
+  padding: 0;
+}
+
+.small-left {
+  grid-row: span 1; /* Занимает 1 строку */
+}
+
+.right-text {
+  grid-column: 2; /* В правой колонке */
+  padding: 2rem;
+  align-items: center;
+}
+
+.left-text{
+  grid-column: 1; /* В правой колонке */
+  padding: 2rem;
+  align-items: center;
+
+}
+
+.large-right {
+  grid-column: 2; /* В правой колонке */
+  grid-row: auto / span 2; /* Занимает 2 строки */
+  padding: 0;
+}
+
+.half-width {
+  grid-column: span 1; /* Занимает 1 колонку */
+}
+
+/* Градиентные линии */
+.content-item h3::before {
+  content: '';
+  display: block;
+  width: 200px; /* Ширина линии */
+  height: 3px; /* Высота линии */
+  background-image: linear-gradient(to right, #007bff, #afafaf); /* Градиентный фон */
+  margin-bottom: 1rem; /* Отступ под линией */
+}
+
+/* Двухколонный контент */
+.two-column-content {
+  display: flex;
+  justify-content: space-between; /* Выравнивание по краям */
+  align-items: center; /* Вертикальное выравнивание */
+}
+
+.two-line-content {
+  display: grid;
+  grid-template-rows: 1fr 1fr; /* Разбиваем на 2 строки */
+}
+
+.text-section {
+  height: 100%; /* Занимает 50% ширины */
+  padding: 3rem;
+  align-items: center;
+}
+
+.image-section {
+  padding: 0; /* Нет отступов для изображения */
+}
+
+.image-section img {
+  width: 100%; /* Изображение растягивается на всю ширину */
+}
+
+.left-side {
+  width: 50%; /* Занимает 50% ширины */
+  padding: 3rem;
+}
+
+.right-side {
+  width: 50%; /* Занимает 50% ширины */
+  padding: 0;
+}
+
+.right-side img {
+  width: auto;
+  height: 100%;
+}
+
+/* Градиентные линии */
+.left-side h3::before {
+  content: '';
+  display: block;
+  width: 200px; /* Ширина линии */
+  height: 2px; /* Высота линии */
+  background-image: linear-gradient(to right, #2453C0, #D2DFFF); /* Градиентный фон */
+  margin-bottom: 1rem; /* Отступ под линией */
+}
+
+
+
+.text-section-content-block3 p{
+  margin-top: 1%;
+  color: #A7A5AF;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 140%;
+}
+
+.text-section-header-block3 h3{
+  margin-top: 1%;
+  color: #A7A5AF;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 130%;
+}
+
+.gradient-icon {
+  width: 50px;
+  height: 50px;
+  display: block;
+}
+
+.gradient-icon-container {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  background-color: white; /* Белый фон */
+}
+
+.gradient-icon-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, #1461FE, #8940FB); /* Градиент */
+  z-index: 1;
+  mix-blend-mode: multiply; /* Накладывает градиент на изображение */
+}
+
+.gradient-icon-container img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  z-index: 2;
+}
+
+.contact-us-block {
+  background-color: #E8E9EECC; /* Чёрный фон */
+  color: #0A0046; /* Белый текст */
+  padding: 0 0; /* Отступ сверху и снизу */
+}

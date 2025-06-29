@@ -37,18 +37,24 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-right: 1px solid #e8e8e8;
-  border-left: 1px solid #e8e8e8;
+  border-right: 1.3px solid #C0C6CF;
+  border-left: 1.3px solid #C0C6CF;
 }
 
 .logo-container {
   display: flex;
   align-items: center;
+  max-width:19%;
+}
+
+.logo-container-header h3{
+  font-weight: 400;
+  margin-left: 10%;
 }
 
 .logo {
-  width: 50px;
-  height: 50px;
+  width: 90px;
+  height: 90px;
   margin-right: 10px;
 }
 
@@ -80,8 +86,8 @@
 }
 
 .header-nav {
-  border-top: 1px solid #e8e8e8;
-  border-bottom: 1px solid #e8e8e8;
+  border-top: 1.3px solid #C0C6CF;
+  border-bottom: 1.3px solid #C0C6CF;
   padding: 0;
 }
 
@@ -103,7 +109,7 @@
 .nav-menu li a {
   display: block;
   padding: 15px 20px;
-  color: #333;
+  color: #0A0046;
   text-decoration: none;
   font-size: 14px;
   transition: color 0.3s ease;
@@ -149,12 +155,14 @@
   display: flex;
   align-items: center;
   padding: 10px 20px;
-  border: 1px solid #4762FF;
+  border: 1.3px solid #0A0046;
   border-radius: 1px;
-  color: #4762FF;
+  color: #0A0046;
   text-decoration: none;
-  font-size: 14px;
+  font-size: 17px;
   transition: all 0.3s ease;
+  font-weight: 400;
+  line-height: 110%;
 }
 
 .contact-button:hover {

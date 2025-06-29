@@ -1,0 +1,156 @@
+
+.contact-module {
+    background-color: #E8E9EECC;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-text-info{
+    max-width: 58%;
+    letter-spacing: -1px;
+    background-color: #E8E9EECC; /* Цвет фона */
+    padding-top: 50px; /* Отступ сверху */
+}
+
+h1 {
+    font-size: 62px;
+    margin-bottom: 10px;
+    font-weight: 400;
+    line-height: 110%;
+    margin-bottom: 30px
+}
+
+p {
+    margin-bottom: 60px;
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 130%;
+}
+
+.form-group {
+    border-top: 1.3px solid #C0C6CF;
+    border-left: 1.3px solid #C0C6CF;
+    width: 100%;
+    overflow: hidden
+}
+
+.lower-row-contact-form{
+    border-bottom: 1.3px solid #C0C6CF;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding-left:47px;
+    padding-right:47px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    background-color: #E8E9EECC; /* Установлен фон */
+    border: none;
+    box-shadow: none;
+    outline: none;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 130%;
+    color: #0A0046;
+    letter-spacing: -1px;
+}
+
+input::placeholder,
+textarea::placeholder{
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 130%;
+    color: #0A0046;
+}
+
+textarea{
+    height: 270px;
+}
+
+input:focus,
+textarea:focus {
+    border: none; 
+    box-shadow: none;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 130%;
+    color: #0A0046;
+}
+
+.button-container {
+    display: flex; /* Используем Flexbox для выравнивания */
+    justify-content: flex-end; /* Сдвигаем кнопку вправо */
+    height: 100%; /* Занимаем всю высоту родительского блока */
+}
+
+button {
+    width: 265.5px;
+    height: 100%;
+    background-color: #2264DC;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 110%;
+    letter-spacing: 0px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.content-grid-contacts {
+    display: grid;
+    grid-template-columns:
+        repeat(1, 9.6875%) 
+        repeat(2, 40.3125%) 
+        repeat(1, 9.6875%);
+    padding-bottom: 114px;
+    background-color: #E8E9EECC;
+}
+
+/* custom checkobox */
+.form-group input[type="checkbox"] {
+    display: none; /* Скрываем стандартный чекбокс */
+}
+
+.custom-checkbox {
+    position: relative;
+    margin-left: 74px;/* Отступ для метки, чтобы оставить место для кастомного чекбокса */
+    cursor: pointer;
+    display: flex; /* Используем flex для выравнивания */
+    align-items: center; /* Центрируем по вертикали */
+    margin-bottom: 30px;
+    margin-top: 30px;
+    line-height: 1.5;
+
+}
+
+.checkbox {
+    position: absolute;
+    left: -27px;
+    width: 17px; /* Ширина кастомного чекбокса */
+    height: 17px; /* Высота кастомного чекбокса */
+    border: 1.5px solid #0A0046; /* Широкая граница кастомного чекбокса и цвет */
+    background-color: transparent; /* Фон по умолчанию */
+}
+
+.custom-checkbox input[type="checkbox"]:checked + .checkbox {
+    background-color: #0A0046; /* Фон активного чекбокса */
+}
+
+.custom-checkbox input[type="checkbox"]:checked + .checkbox::after {
+    content: '';
+    position: absolute;
+    left: 50%; /* Положение галочки */
+    top: 0;
+    width: 5px; /* Ширина галочки */
+    height: 10px; /* Высота галочки */
+    border: solid white; /* Цвет галочки */
+    border-width: 0 2px 2px 0; /* Формирование галочки */
+    transform: translateX(-50%) rotate(45deg); /* Поворот для создания галочки */
+}

@@ -9,6 +9,7 @@ body {
   line-height: 1.5;
   color: #333;
   background-color: #fff;
+  color: #0A0046;
 }
 
 img {
@@ -32,9 +33,9 @@ button {
 }
 
 .inner-container {
-  max-width: 90%;
+  max-width: 80.625%;
   margin: 0 auto;
-  padding: 0 15px;
+
 }
 
 .fade-in {

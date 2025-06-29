@@ -31,6 +31,7 @@ body {
   text-align: left;
   overflow: hidden;
   min-height: 80vh;
+  margin-top:50px;
 }
 
 .hero-background-overlay {
@@ -65,25 +66,29 @@ body {
   flex-direction: column;
 }
 
-.hero-section h1 {
-  font-size: 3rem;
-  margin-bottom: 1rem;
+.hero-content h1{
+  font-size: 68px;
+  line-height: 108%;
+  font-weight: 400;
 }
 
 .slogan {
   z-index: 1;
-  font-size: 1.2rem;
+  font-size: 26px;
   margin: 0;
   text-align: start;
+  font-weight: 400;
+  line-height: 110%;
 }
 
 .buttons-container {
   position: absolute;
   bottom: 2rem;
   display: flex;
-  gap: 1rem;
+  gap: 40px;
   z-index: 2;
   flex-direction: column;
+  width: 770px;
 }
 
 .button-group {
@@ -92,22 +97,26 @@ body {
 }
 
 .button {
-  padding: 1rem 2rem;
-  border-radius: 4px;
+  height:51px;
   cursor: pointer;
   transition: all 0.3s ease;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 110%;
 }
 
 .primary-button {
-  background-color: #007bff;
+  width: 373.5px;
+  background-color: #2264DC;
   color: #fff;
 }
 
 .primary-button:hover {
-  background-color: #0056b3;
+  background-color: #002042;
 }
 
 .secondary-button {
+  width: 377px;
   background-color: transparent;
   border: 1px solid #ccc; 
   color: #ccc;
@@ -146,6 +155,12 @@ body {
   margin-left: 3rem;
 }
 
+.right-column p{
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 130%;
+}
+
 /* Второй блок */
 .second-block {
   margin-top: 4rem;
@@ -161,6 +176,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  letter-spacing: -1px;
 }
 
 .feature {
@@ -182,8 +198,10 @@ body {
 }
 
 .feature h3 {
-  font-size: 2.8rem;
+  font-size: 58px;
   margin-bottom: 1rem;
+  font-weight: 300;
+  line-height: 115%;
 }
 
 .feature h4 {
@@ -192,8 +210,9 @@ body {
 }
 
 .feature p {
-  font-size: 1rem;
+  font-size: 18px;
   line-height: 1.5;
+  font-weight: 40;
 }
 
 .breadcrumbs {
@@ -224,14 +243,27 @@ body {
   color: #fff;
 }
 
-.gradient-text {
-  font-size: 60px;
-  line-height: 60px;
-  background-image: linear-gradient(to right, #6a50ec, #ff49db); /* Градиент от фиолетового до розового */
+.gradient-text-b1 {
+  font-size: 62px;
+  line-height: 110%;
+  background-image: linear-gradient(to right, #1461FE, #8940FB); /* Градиент от фиолетового до розового */
   -webkit-background-clip: text; /* Для Chrome, Safari и Edge */
   -webkit-text-fill-color: transparent; /* Для Chrome, Safari и Edge */
   background-clip: text; /* Для Firefox */
   color: transparent; /* Для браузеров, не поддерживающих background-clip */
+  font-weight: 400;
+  
+}
+
+.gradient-text-b2 h2{
+  font-size: 62px;
+  line-height: 110%;
+  background-image: linear-gradient(to right, #2453C0, #BFD3FF); /* Градиент от фиолетового до розового */
+  -webkit-background-clip: text; /* Для Chrome, Safari и Edge */
+  -webkit-text-fill-color: transparent; /* Для Chrome, Safari и Edge */
+  background-clip: text; /* Для Firefox */
+  color: transparent; /* Для браузеров, не поддерживающих background-clip */
+  font-weight: 400;
 }
 
 /* Третий блок */
@@ -246,7 +278,7 @@ body {
   grid-template-columns: repeat(2, 1fr); /* Две колонки */
   gap: 2rem; /* Отступы между элементами */
   grid-auto-rows: minmax(200px, auto); /* Минимальная высота строки */
-  grid-template-rows: repeat(6, 1fr);
+  grid-template-rows: repeat(5, 1fr);
 }
 
 .content-item {
@@ -346,30 +378,73 @@ body {
 }
 
 .right-side img {
-  width: 100%;
-  height: auto;
+  width: auto;
+  height: 100%;
 }
 
 /* Градиентные линии */
 .left-side h3::before {
   content: '';
   display: block;
-  width: 100px; /* Ширина линии */
-  height: 4px; /* Высота линии */
-  background-image: linear-gradient(to right, #007bff, #6a50ec); /* Градиентный фон */
+  width: 200px; /* Ширина линии */
+  height: 2px; /* Высота линии */
+  background-image: linear-gradient(to right, #2453C0, #D2DFFF); /* Градиентный фон */
   margin-bottom: 1rem; /* Отступ под линией */
 }
 
-.text-section-header-block3{
-  font-size: 32px;
+
+
+.text-section-content-block3 p{
+  margin-top: 1%;
+  color: #A7A5AF;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 140%;
 }
 
-.text-section-content-block3{
-  font-size: 18px;
+.text-section-header-block3 h3{
+  margin-top: 1%;
+  color: #A7A5AF;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 130%;
 }
 
 .gradient-icon {
   width: 50px;
   height: 50px;
   display: block;
+}
+
+.gradient-icon-container {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  background-color: white; /* Белый фон */
+}
+
+.gradient-icon-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, #1461FE, #8940FB); /* Градиент */
+  z-index: 1;
+  mix-blend-mode: multiply; /* Накладывает градиент на изображение */
+}
+
+.gradient-icon-container img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  z-index: 2;
+}
+
+.contact-us-block {
+  background-color: #E8E9EECC; /* Чёрный фон */
+  color: #0A0046; /* Белый текст */
+  padding: 0 0; /* Отступ сверху и снизу */
 }

@@ -25,11 +25,13 @@ const Header = () => {
         <div className="inner-container header-top-container">
           <div className="logo-container">
             <Link to="/">
-              <img src="/assets/images/logo.svg" alt="Ассоциация технопарков" className="logo" />
+              <img src="/assets/images/Asstech_logo.svg" alt="Ассоциация технопарков" className="logo" />
             </Link>
+            <div className="logo-container-header">
+              <h3>Ассоциация технопарков</h3>
+            </div>
           </div>
 
-          {/* Кнопка "Связаться с нами" справа */}
           <div className="header-actions-right">
             <Link to="/contacts" className="contact-button">
               Связаться с нами <span className="arrow">→</span>

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import Layout from '../components/layout/Layout';
 import Breadcrumbs from '../components/common/Breadcrumbs'; 
 import "../styles/pages/goalsPage.css"
@@ -6,6 +7,10 @@ import investmentImage from '../images/goalsPage/investment-attraction.jpg';
 import subcontractingImage from '../images/goalsPage/subcontracting.png';
 import exportOrientedProductionImage from "../images/goalsPage/export-oriented-production.jpg"
 import GradientIcon from '../components/common/GradientIcon';
+// import iconInfra from "../icons/icon-infra.svg"
+import iconInfra from '../icons/icon-infra.js';
+import ContactForm from '../components/common/ContactsForm';
+
 const GoalsPage = ({ 
   children, 
   showBreadcrumbs = true, 
@@ -38,7 +43,7 @@ const GoalsPage = ({
         <div className=" inner-container">
           <div className="two-column-container">
           <div className="left-column">
-            <h2 className="gradient-text">Цели создания Ассоциации</h2>
+            <h2 className="gradient-text-b1">Цели создания Ассоциации</h2>
           </div>
           <div className="right-column">
             <p>Сильнейшие технопарки и компании объединились вместе для создания уникальной Ассоциации развития бизнеса.</p>
@@ -56,21 +61,23 @@ const GoalsPage = ({
                 <h3>Наши технологии. Наш успех.</h3>
               </div>
               <div className="feature-item">
-                <GradientIcon id="infra" width={50} height={50} />
+                {/* <img src={iconInfra} alt =""/> */}
+                {/* <GradientIcon id="infra" width={50} height={50} /> */}
+                
                 <div>
                   <h4>Инновационная инфраструктура</h4>
-                  <p>Создаем мощную инновационную инфраструктуру...</p>
+                  <p>Создаем мощную инновационную инфраструктуру, объединяя ресурсы и возможности технопарков и компаний для развития новых технологий и стартапов</p>
                 </div>
               </div>
               <div className="feature-item">
-                <img src="/icons/icon-protection.svg" alt="Координация и защита" className="icon" />
+                <img src="../icons/icon-protection.svg" alt="Координация и защита" className="icon" />
                 <div>
                   <h4>Координация и защита</h4>
                   <p>Обеспечиваем координацию действий участников Ассоциации, защищая их интересы на высоком уровне и создавая условия для успешного функционирования и роста.</p>
                 </div>
               </div>
               <div className="feature-item">
-                <img src="/icons/icon-exchange.svg" alt="Стимулирование обмена опытом" className="icon" />
+                <img src="../icons/icon-exchange.svg" alt="Стимулирование обмена опытом" className="icon" />
                 <div>
                   <h4>Стимулирование обмена опытом</h4>
                   <p>Способствуем обмену опытом между резидентами, организуя различные мероприятия, для повышения квалификации и внедрения лучших практик.</p>
@@ -85,7 +92,7 @@ const GoalsPage = ({
         <div className="inner-container">
           <div className="two-column-container">
             <div className="left-column">
-              <div className="text-section-header-block3">
+              <div className="text-section-header-block3 gradient-text-b2">
                 <h2>Основные задачи Ассоциации</h2>
               </div>
             </div>
@@ -188,6 +195,14 @@ const GoalsPage = ({
             </div>
           </div>
         </div>
+      </section>
+
+      <section className="content-section contact-us-block">
+          <div className="contact-form-container">
+            <div className="form-content">
+              <ContactForm/>
+            </div>
+          </div>
       </section>
     </Layout>
   );

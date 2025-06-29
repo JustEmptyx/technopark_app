@@ -23,6 +23,11 @@
   flex-direction: column;
 }
 
+.footer-logo-section img{
+  width: 80px;
+  height: 90px;
+}
+
 .footer-logo-link {
   display: flex;
   align-items: center;

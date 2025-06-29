@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
+import "../../styles/components/common/breadcrumbs.css"
 
 const Breadcrumbs = ({ customItems }) => {
   const location = useLocation();

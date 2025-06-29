@@ -13,7 +13,7 @@ const Footer = () => {
           <div className="footer-grid">
             <div className="footer-logo-section">
               <Link to="/" className="footer-logo-link">
-                <img src="/assets/images/logo.svg" alt="Ассоциация технопарков" className="footer-logo" />
+                <img src="/assets/images/Asstech_logo_footer.svg" alt="Ассоциация технопарков" className="footer-logo" />
                 <div className="footer-logo-text">
                   <div className="footer-logo-title">Ассоциация</div>
                   <div className="footer-logo-subtitle">технопарков</div>
