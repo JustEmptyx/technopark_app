@@ -129,6 +129,48 @@ const AboutPage = ({
         </div>
       </section>
 
+      <section>
+        <div className="aboutPage-offers">
+          <div className="aboutPage-offers-grid inner-container">
+            <div className="aboutPage-offers-grid-item">
+              <h3>Стимулирование обмена опыта</h3>
+              <p>Ассоциация организует мероприятия для обмена опытом между участниками, что позволяет делиться успешными практиками и накапливать знания в сфере инновационного развития.</p>
+              <Link to="/experience" className="link">Читать подробнее</Link>
+            </div>
+            <div className="aboutPage-offers-grid-item">
+              <h3>Представление интересов резидентов</h3>
+              <p>Ассоциация активно защищает интересы резидентов технопарков, представляя их позиции в государственных органах и других институтах, способствует улучшению условий для бизнеса.</p>
+              <Link to="/interests" className="link">Читать подробнее</Link>
+            </div>
+            <div className="aboutPage-offers-grid-item">
+              <h3>Развитие нормативно-правовой базы</h3>
+              <p>Ассоциация работает над совершенствованием нормативно-правовой базы, создает условия для более эффективного функционирования технопарков и поддержки резидентов.</p>
+              <Link to="/regulation" className="link">Читать подробнее</Link>
+            </div>
+            <div className="aboutPage-offers-grid-item">
+              <h3>Содействие привлечению инвестиций</h3>
+              <p>Ассоциация активно ищет возможности
+для привлечения инвестиций в проекты резидентов технопарков, создает привлекательные условия для инвесторов
+и стартапов.</p>
+              <Link to="/investments" className="link">Читать подробнее</Link>
+            </div>
+            <div className="aboutPage-offers-grid-item">
+              <h3>Содействие трансферу технологий</h3>
+              <p>Поддержка трансфера технологий между научными учреждениями и бизнесом, способствуя внедрению новых разработок
+и повышению конкурентоспособности компаний.</p>
+              <Link to="/technology-transfer" className="link">Читать подробнее</Link>
+            </div>
+            <div className="aboutPage-offers-grid-item">
+              <h3>Выход на мировые рынки</h3>
+              <p>Ассоциация помогает резидентам
+выйти на международные рынки, предоставляя доступ к информации, ресурсам, партнёрским сетям и лучшим практикам в бизнесе.</p>
+              <Link to="/global-markets" className="link">Читать подробнее</Link>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+
       <section className="content-section third-block">
         <div className="inner-container">
           <div className="two-column-container">

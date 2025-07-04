@@ -349,15 +349,54 @@ body {
 
 .aboutPage-image-block{
   width: 100%; /* Занимает всю ширину */
-  height:835px;
+  height: 835px; /* Высота будет зависеть от изображения */
   overflow: hidden; /* Скрывает переполнение, если изображение больше блока */
-  object-fit: cover;
 }
 
 .aboutPage-image{
-  width: 100%; /* Растягивает изображение на всю ширину блока */
-  height: auto; /* Сохраняет пропорции изображения */
+  width: 100%; /* Устанавливаем ширину 100% */
+  height: 835px; /* Высота будет автоматически подстраиваться */
+  object-fit: cover; /* Обеспечивает правильное обрезание изображения, чтобы оно заполнило блок */
+  object-position: bottom; /* Показывает нижнюю часть изображения */
   display: block; /* Убирает отступы снизу у изображения */
+}
+
+.aboutPage-offers{
+  margin-top: 60px;
+}
+
+.aboutPage-offers-grid{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 колонки */
+  gap: 50px 82px;
+}
+
+.aboutPage-offers-grid-item{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Прижимаем элементы к левой границе */
+}
+
+.aboutPage-offers-grid-item h3{
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 130%;
+  margin-bottom: 39px;
+}
+
+.aboutPage-offers-grid-item p{
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 140%;
+  margin-bottom: 56px; 
+}
+
+.aboutPage-offers-grid-item link{
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 130%;
+  color: #0000EE; /* Цвет ссылки */
+  text-decoration: underline; /* Подчеркивание ссылки */
 }
 
 .gradient-text-b1 {
